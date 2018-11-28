@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dreamer Medical Support - get the most suitable medical support</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/customize.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+    form {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  {{> navbar}}
+
+  <div class="half-cover1">
+    <div class="jumbotron text-center">
+      <h1 style="color:white">Search Feature</h1>
+      <p style="color: white">searching the medical facilities that can help you</p>
+    </div>
+  </div>
+  <div class="row container text-center">
+    <div class="col-sm-12">
+      <form id="form" action="/" method="post">
+        <div class="form-group">
+          <label for="addr">Enter a location :</label>
+          <input id="addr" name="address" class="form-control" type="text" placeholder="Enter the area location you prefer" />
+          <p></p>
+          <label for="name">Enter the name of facilities :</label>
+          <input id="name" name="name" class="form-control" type="text" placeholder="Enter facility name" />
+          <p></p>
+          <label for="places-type">Select the type of medical facilities :</label>
+          <p></p>
+          <select id="places-type" name="placetype" class="form-control">
+            {{> scrollablelist}}
+          </select>
+          <p></p>
+          <input type="submit" value="Done" formaction="/getplaces" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

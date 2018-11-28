@@ -1,0 +1,68 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.half-cover1 {
+  /* The image used */
+  background-image: url('search.jpeg');
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #474545;
+  background-blend-mode: overlay;
+  opacity: 0.85;
+}
+
+.half-cover2 {
+  /* The image used */
+  background-image: url('result.jpeg');
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #474545;
+  background-blend-mode: overlay;
+  opacity: 0.85;
+}
+
+.half-cover3 {
+  /* The image used */
+  background-image: url('history.jpeg');
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #474545;
+  background-blend-mode: overlay;
+  opacity: 0.85;
+}
+
+.centered {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jumbotron {
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0);
+}
